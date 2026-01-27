@@ -1,53 +1,36 @@
-# Student Resource Management System
+# Student Activity Manager
 
 # String
-college = "Tech Valley Institute"
+project_title = "Student Activity Manager"
+college_name = "Digital Learning Campus"
 
 # List
-courses = ["Python", "Data Science", "AI"]
-
-# Tuple
-departments = ("CSE", "IT", "ECE")
-
-# Set
-roll_numbers = {101, 102, 103, 103, 104}
-
-# Dictionary
-student = {
-    "name": "Rahul",
-    "age": 19,
-    "course": "Python"
-}
-
-# List operations
-courses.append("Cyber Security")
-courses.extend(["Cloud", "Blockchain"])
-course_copy = courses.copy()
-course_slice = courses[0:3]
-
-# Set operation
-roll_numbers.add(105)
+students = ["Amit", "Neha", "Ravi"]
+activities = ["Coding", "Design", "Testing"]
 
 # String operations
-college_upper = college.upper()
-college_short = college.replace("Institute", "Inst.")
+title_upper = project_title.upper()
+short_name = college_name.replace("Campus", "Cmp.")
 
-# Dictionary operations
-student["year"] = "First Year"
-student["status"] = "Active"
+# List operations
+students.append("Kiran")
+students.extend(["Pooja", "Arjun"])
+students_copy = students.copy()
+student_slice = students[1:4]
 
-# Tuple operation
-all_departments = departments + ("ME",)
+activities.append("Documentation")
+activities.extend(["Debugging", "Presentation"])
+activity_slice = activities[0:3]
 
 # Output
-print("------ STUDENT SYSTEM REPORT ------")
-print("College:", college_upper)
-print("Short Name:", college_short)
-print("Courses:", courses)
-print("Course Copy:", course_copy)
-print("Course Slice:", course_slice)
-print("Departments:", all_departments)
-print("Roll Numbers:", roll_numbers)
-print("Student Info:", student)
-print("Student Name:", student["name"])
-print("System Status: Data Structure Loaded Successfully")
+print("------ PROJECT REPORT ------")
+print("Project Title:", title_upper)
+print("Institute:", short_name)
+print("Student List:", students)
+print("Copied List:", students_copy)
+print("Sliced Students:", student_slice)
+print("Activities:", activities)
+print("Sliced Activities:", activity_slice)
+print("Total Students:", len(students))
+print("Total Activities:", len(activities))
+print("System Status: Data Processed Successfully")
