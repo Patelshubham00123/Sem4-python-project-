@@ -1,0 +1,3 @@
+a,b,c = 10,3.14," hey sp"
+ #a is int,b float,c string
+print(a,b,c)
